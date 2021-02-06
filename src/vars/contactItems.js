@@ -13,5 +13,5 @@ export var socialLinks = [
     },
 ]
 
-export var bottom1stTest = 'Thank you';
+export var bottom1stTest = 'Thank you!';
 export var bottom2ndText = '';

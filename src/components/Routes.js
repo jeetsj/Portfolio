@@ -4,7 +4,6 @@ import Home from "./Home";
 import Skills from "./Skills";
 import Works from "./Projects";
 import Contact from "./Contact";
-import Resume from "./Resume";
 import {AnimatedSwitch} from 'react-router-transition';
 
 
@@ -18,7 +17,6 @@ const Routes = (props) => (
         <Route path='/skills' component={Skills}/>
         <Route path='/projects' component={Works}/>
         <Route path='/contact' component={Contact} />
-        <Route path='/resume' component={Resume} />
     </AnimatedSwitch>
 );
 
