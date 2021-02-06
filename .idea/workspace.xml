@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79fcb482-b8da-419b-9b99-0e114e1930f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>portfo</find>
+      <find>32</find>
+      <find>marginTop={0}</find>
+      <find>over</find>
+      <find>ads</find>
+      <find>SQL</find>
+      <find>==</find>
+      <find>png</find>
+      <find>react</find>
+      <find>githu</find>
+      <find>pomo</find>
+      <find>bootst</find>
+      <find>about</find>
+      <find>asana</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>16</replace>
+      <replace>margins={0}</replace>
+      <replace>===</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectId" id="1aLw7gs7OtOANJdBUzafMQDUtzw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OfficeProfiler" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="D:\SourceCodes\ReactJS\Projects\MyPortfolio1\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="D:\SourceCodes\ReactJS\Projects\MyPortfolio1\node_modules\eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SourceCodes\ReactJS\Projects\MyPortfolio3" />
+      <recent name="D:\SourceCodes\ReactJS\Projects\MyPortfolio3\public" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79fcb482-b8da-419b-9b99-0e114e1930f5" name="Default Changelist" comment="" />
+      <created>1552025408308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552025408308</updated>
+      <workItem from="1552025415886" duration="980000" />
+      <workItem from="1552209235398" duration="1595000" />
+      <workItem from="1552216200771" duration="2813000" />
+      <workItem from="1552224545674" duration="890000" />
+      <workItem from="1552280746756" duration="691000" />
+      <workItem from="1552961952230" duration="639000" />
+      <workItem from="1552976519724" duration="4110000" />
+      <workItem from="1553006555426" duration="961000" />
+      <workItem from="1553010719459" duration="1109000" />
+      <workItem from="1553139243093" duration="3634000" />
+      <workItem from="1553432990624" duration="2357000" />
+      <workItem from="1553438416722" duration="813000" />
+      <workItem from="1554274682643" duration="57000" />
+      <workItem from="1554278861009" duration="27000" />
+      <workItem from="1554289626232" duration="20000" />
+      <workItem from="1554295066712" duration="122000" />
+      <workItem from="1554295389064" duration="90000" />
+      <workItem from="1554356044812" duration="170000" />
+      <workItem from="1554356282414" duration="653000" />
+      <workItem from="1554386113201" duration="306000" />
+      <workItem from="1555639733978" duration="1256000" />
+      <workItem from="1556097803485" duration="2263000" />
+      <workItem from="1556169937254" duration="2102000" />
+      <workItem from="1558217814467" duration="34000" />
+      <workItem from="1558217962746" duration="14000" />
+      <workItem from="1558218933229" duration="16000" />
+      <workItem from="1558218964159" duration="158000" />
+      <workItem from="1560418375329" duration="1854000" />
+      <workItem from="1560428503766" duration="575000" />
+      <workItem from="1560490464362" duration="1439000" />
+      <workItem from="1560692722488" duration="83000" />
+      <workItem from="1567152222216" duration="6073000" />
+      <workItem from="1582530543217" duration="59000" />
+      <workItem from="1584772579257" duration="225000" />
+      <workItem from="1584773262732" duration="638000" />
+      <workItem from="1584783523731" duration="1056000" />
+      <workItem from="1584807505372" duration="1409000" />
+      <workItem from="1586528035725" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Skills.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
