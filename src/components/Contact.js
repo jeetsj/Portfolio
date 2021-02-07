@@ -16,7 +16,7 @@ const styles = theme => ({
 const Contact = (props) => (
     <Grid>
         <Paper style={{padding: 16}}>           
-            <Typography>
+            <Typography style={{ fontSize: 18 }}>
                 Contact me via Email
             </Typography>
             {email}
@@ -24,11 +24,10 @@ const Contact = (props) => (
 
         <SocialLinks name='My Other Social Links' list={socialLinks} marginTop={16}/>
 
-        <Paper style={{ padding: 16, marginTop: 16, marginBottom: 16 }}>
-            <Typography>
+        <Paper style={{ padding: 16, marginTop: 16, marginBottom: 16, fontSize: 18 }}>
+            <Typography style={{ fontSize: 18 }} >
             {bottom1stTest}
             </Typography>
-                {bottom2ndText}
         </Paper>
 
     </Grid>

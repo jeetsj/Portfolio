@@ -24,7 +24,7 @@ import SvgIcon from "@material-ui/core/SvgIcon/SvgIcon";
 const styles = {
     subHeader: {
         color: '#212121',
-        fontSize: 16,
+        fontSize: 18,
     },
     icon: {
         color: '#FFF'

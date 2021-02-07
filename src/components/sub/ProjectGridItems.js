@@ -65,13 +65,14 @@ const mtb = [
 
 const ProjectGridItems = (props) => {
     const { name, list, margins } = props;
+    let columns = window.screen.width > 768 ? 4 : 3;
 
     return (
 
         <Paper
             style={mtb[margins]}>
-            <GridList cols={4} style={styles.tile}>
-                <GridListTile key="Subheader" cols={4} style={{height: 'auto'}}>
+            <GridList cols={columns} style={styles.tile}>
+                <GridListTile key="Subheader" cols={columns} style={{height: 'auto'}}>
                     <ListSubheader
                         style={styles.subHeader}
                         component="div">{name}</ListSubheader>

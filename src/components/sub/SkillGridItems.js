@@ -49,12 +49,14 @@ const mtb = [
 ]
 
 const SkillGridItems = (props) => {
-    const {name, list, margins} = props;
+    const { name, list, margins } = props;
+
+    let columns = window.screen.width > 768 ? 6 : 3;
 
     return (
         <Paper style={mtb[margins]}>
-            <GridList cellHeight={90} cols={6} style={styles.tile}>
-                <GridListTile key="Subheader" cols={6} style={{height: 'auto'}}>
+            <GridList cellHeight={90} cols={columns} style={styles.tile}>
+                <GridListTile key="Subheader" cols={columns} style={{height: 'auto'}}>
                     <ListSubheader
                         style={styles.subHeader}
                         component="div">{name}</ListSubheader>
