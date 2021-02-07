@@ -46,7 +46,6 @@ class ListItemLink extends Component {
                     style={route === index ? newSyles.selectedIcon : null}
                 >{icon}</ListItemIcon>
                 <ListItemText
-                    disableTypography
                     style={route === index ? newSyles.selectedText : null}
                     primary={primary}/>
             </ListItem>

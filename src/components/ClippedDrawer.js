@@ -20,27 +20,39 @@ import { myName, myGithub } from '../vars/homeItems'
 import ResumeSD from './ResumeSD.pdf';
 import SubjectIcon from '@material-ui/icons/Subject';
 
+import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
+import MenuIcon from '@material-ui/icons/Menu';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 const drawerWidth = 240;
 
-const styles = theme => ({
+const styles = makeStyles((theme) => ({
     root: {
         display: 'flex',
     },
+
     appBar: {
-        zIndex: theme.zIndex.drawer + 1,
-        backgroundColor: '#4CAF50'
+        [theme.breakpoints.up('sm')]: {
+            width: `calc(100% - ${drawerWidth}px)`,
+            marginLeft: drawerWidth,
+            color: "#FFF",
+            backgroundColor: "#4CAF50",
+        },
     },
     drawer: {
-        width: drawerWidth,
-        flexShrink: 0,
+        [theme.breakpoints.up('sm')]: {
+            width: drawerWidth,
+            flexShrink: 0,
+            backgroundColor: "#4CAF50",
+        },
     },
     drawerPaper: {
         width: drawerWidth,
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing.unit * 3,
+        padding: theme.spacing(3),
     },
     toolbar: theme.mixins.toolbar,
     lists: {
@@ -59,7 +71,13 @@ const styles = theme => ({
     grow: {
         flexGrow: 1
     },
-});
+    menuButton: {
+        marginRight: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'none',
+        },
+    },
+}));
 
 const routes = [
     '/',
@@ -69,8 +87,20 @@ const routes = [
 ]
 
 function ClippedDrawer(props) {
-    const {classes} = props;
+    const classes = styles();
+
     const [route, setRoute] = useState(0)
+
+    const { window } = props;
+    const theme = useTheme();
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    const handleDrawerToggle = () => {
+        setMobileOpen(!mobileOpen);
+    };
+
+    const container = window !== undefined ? () => window().document.body : undefined;
+
 
     return (
         <MemoryRouter
@@ -79,14 +109,24 @@ function ClippedDrawer(props) {
             <ScrollToTop>
                 <div className={classes.root}>
                     <CssBaseline/>
-                    <AppBar position="fixed" className={classes.appBar}>
+                    <AppBar position="fixed" className={classes.appBar} style={{ background: '#4CAF50' }}>
                         <Toolbar>
-                            <Typography variant="h6" color="inherit" noWrap className={classes.grow}>
-                                {myName}
-                            </Typography>
+                            <Box display='flex' flexGrow={1}>
 
                             <IconButton
-                                style={{ fontSize: 16 }}
+                                style={{ color: 'white' }}
+
+                                aria-label="open drawer"
+                                edge="start"
+                                onClick={handleDrawerToggle}
+                                className={classes.menuButton}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            </Box>
+
+                            <IconButton
+                                style={{ fontSize: 16, color:"white" }}
                                 href={ResumeSD}
                                 target="_blank"
                                 color="inherit">
@@ -95,7 +135,7 @@ function ClippedDrawer(props) {
                             </IconButton>
 
                             <IconButton
-                                style={{ fontSize: 16 }}
+                                style={{ fontSize: 16, color:"white" }}
                                 href={myGithub}
                                 target="_blank"
                                 color="inherit">
@@ -108,9 +148,18 @@ function ClippedDrawer(props) {
 
                         </Toolbar>
                     </AppBar>
+                    <nav className={classes.drawer} aria-label="mailbox folders">
+                    <Hidden smUp implementation="css">
                     <Drawer
+                        container={container}
+                        variant="temporary"
+                        anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+                        open={mobileOpen}
+                        onClose={handleDrawerToggle}         
+                        ModalProps={{
+                            keepMounted: true, 
+                        }}
                         className={classes.drawer}
-                        variant="permanent"
                         classes={{
                             paper: classes.drawerPaper,
                         }}
@@ -144,7 +193,50 @@ function ClippedDrawer(props) {
                             </List>
                         </div>
 
-                    </Drawer>
+                            </Drawer>
+                        </Hidden>
+
+
+                        <Hidden xsDown implementation="css">
+                            <Drawer
+                                classes={{
+                                    paper: classes.drawerPaper,
+                                }}
+                                variant="permanent"
+                                open
+                            >
+                                <div className={classes.toolbar} />
+
+                                <div className={classes.lists}>
+                                    <List>
+                                        {
+                                            upperItems.map((item, index) => (
+                                                <ListItemLink route={route} index={index} setRoute={setRoute} key={index} to={item.to} primary={item.myName} icon={item.icon} />
+                                            ))
+                                        }
+                                    </List>
+
+
+                                    <Divider style={{ marginTop: 16 }} />
+
+                                    <Typography style={{ color: '#212121', margin: 16, fontSize: 18, fontStyle: 'italic' }}>
+                                        My Social Links
+                            </Typography>
+
+                                    <Divider />
+
+                                    <List>
+                                        {
+                                            lowerItems.map((item, index) => (
+                                                <ListItemLinkShorthand key={index} primary={item.myName} to={item.URL} />
+                                            ))
+                                        }
+                                    </List>
+                                </div>
+
+                            </Drawer>
+                        </Hidden>
+                    </nav>
                     <main className={classes.content}>
                         <div className={classes.toolbar}/>
 
@@ -159,6 +251,7 @@ function ClippedDrawer(props) {
 
 ClippedDrawer.propTypes = {
     classes: PropTypes.object.isRequired,
+    window: PropTypes.func,
 };
 
 export default withStyles(styles)(ClippedDrawer);

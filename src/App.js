@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import ClippedDrawer from "./components/ClippedDrawer";
-import {createMuiTheme, MuiThemeProvider} from '@material-ui/core';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({
     typography: {
@@ -15,7 +15,7 @@ class App extends Component {
     render() {
         return (
             <MuiThemeProvider theme={theme}>
-                <ClippedDrawer/>
+                <ClippedDrawer />
             </MuiThemeProvider>
         );
     }

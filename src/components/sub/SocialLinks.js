@@ -24,7 +24,7 @@ import SvgIcon from "@material-ui/core/SvgIcon/SvgIcon";
 const styles = {
     subHeader: {
         color: '#212121',
-        fontSize: 18
+        fontSize: 16,
     },
     icon: {
         color: '#FFF'
@@ -33,7 +33,7 @@ const styles = {
         marginBottom: 32
     },
     tile: {
-        padding: 16
+        padding: 0
     },
     img: {
         maxWidth: '100%',
@@ -49,8 +49,8 @@ const SocialLinks = (props) => {
     return (
         <Paper
             style={{marginTop: marginTop}}>
-            <GridList cols={3} style={styles.tile}>
-                <GridListTile key="Subheader" cols={3} style={{height: 'auto'}}>
+            <GridList cols={2} style={styles.tile}>
+                <GridListTile key="Subheader" cols={2} style={{height: 'auto'}}>
                     <ListSubheader
                         style={styles.subHeader}
                         component="div">{name}</ListSubheader>

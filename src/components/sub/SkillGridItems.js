@@ -53,8 +53,8 @@ const SkillGridItems = (props) => {
 
     return (
         <Paper style={mtb[margins]}>
-            <GridList cellHeight={90} cols={7} style={styles.tile}>
-                <GridListTile key="Subheader" cols={7} style={{height: 'auto'}}>
+            <GridList cellHeight={90} cols={6} style={styles.tile}>
+                <GridListTile key="Subheader" cols={6} style={{height: 'auto'}}>
                     <ListSubheader
                         style={styles.subHeader}
                         component="div">{name}</ListSubheader>

@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://jeetsj.github.io/Portfolio/",
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
+    "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^3.0.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "0.0.0-4e08fb10c",
+    "react-dom": "0.0.0-4e08fb10c",
     "react-router-dom": "^4.3.1",
     "react-router-transition": "^1.3.0",
     "react-scripts": "^2.1.8"
