@@ -65,7 +65,7 @@ const mtb = [
 
 const ProjectGridItems = (props) => {
     const { name, list, margins } = props;
-    let columns = window.screen.width > 768 ? 4 : 3;
+    let columns = window.screen.width > 768 ? 4 : 2;
 
     return (
 
