@@ -1,4 +1,4 @@
-export var email = 'jsjgw@gwu.edu'
+export var email = 'jeetshahj12375@gmail.com'
 
 export var socialLinks = [
     {
