@@ -3,10 +3,8 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\sub",
-    "\\src\\vars"
+    "\\src\\components"
   ],
-  "SelectedNode": "\\src\\vars\\contactItems.js",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
